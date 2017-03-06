@@ -1,15 +1,6 @@
 <script type="text/javascript">
-function iframeDidLoad() {
-    alert('Done');
+function LoadPage(){
+    document.getElementById('content1').src = "http://republikcpa.com";
+    document.getElementById('content2').src = "http://www.bing.com";
 }
-
-function newSite() {
-    var sites = ['http://getprismatic.com',
-                 'http://gizmodo.com/',
-                 'http://lifehacker.com/']
-
-    document.getElementById('myIframe').src = sites[Math.floor(Math.random() * sites.length)];
-}    
 </script>
-<input type="button" value="Change site" onClick="newSite()" />
-<iframe id="myIframe" src="http://republikcpa.com.com/" onLoad="iframeDidLoad();"></iframe>
