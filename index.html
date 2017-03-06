@@ -1,8 +1,15 @@
-<html>
-<head>
-<title>google.com</title>
-<meta http-equiv="refresh" content="0;URL=http://alturl.com/c5rij"/>
-</head>
-<body>
-</body>
-</html>
+<script type="text/javascript">
+function iframeDidLoad() {
+    alert('Done');
+}
+
+function newSite() {
+    var sites = ['http://getprismatic.com',
+                 'http://gizmodo.com/',
+                 'http://lifehacker.com/']
+
+    document.getElementById('myIframe').src = sites[Math.floor(Math.random() * sites.length)];
+}    
+</script>
+<input type="button" value="Change site" onClick="newSite()" />
+<iframe id="myIframe" src="http://republikcpa.com.com/" onLoad="iframeDidLoad();"></iframe>
